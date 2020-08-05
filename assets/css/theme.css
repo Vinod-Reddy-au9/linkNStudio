@@ -360,16 +360,6 @@ article-item
   width : 100px;
   height: 75px;
 }
-
-#video-gallery{
-  margin-top: 2em;
-}
-
-.gallery{
-  font-family: "Roboto";
-  padding: 1em;
-}
-
 .article-item {
   text-decoration: none;
   color: currentColor;
@@ -8094,6 +8084,9 @@ zoom-counters
   color: #666;
 }
 
+#video-gallery{
+  margin-top: 2em;
+}
 /*
 zoom-image-head
 */
