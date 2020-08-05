@@ -356,13 +356,18 @@ BEM styles
 /*
 article-item
 */
-.logo{
-  height: 84px;
-  width: 100px;
+.logoo{
+  width : 100px;
+  height: 75px;
 }
 
-.contact-form{
-  padding : 30px;
+#video-gallery{
+  margin-top: 2em;
+}
+
+.gallery{
+  font-family: "Roboto";
+  padding: 1em;
 }
 
 .article-item {
@@ -6493,7 +6498,7 @@ revolution-slider
 .revolution-slider .tparrows:before {
   font-size: 44px;
   font-family: 'Linearicons';
-  /* speak: none; */
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -8567,184 +8572,4 @@ zoom-slider
   .full-screen-block__footer {
     display: none;
   }
-}
-
-[ Contact ]*/
-
-.container-contact100 {
-  width: 100%;  
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  background: #e6e6e6;
-  
-}
-
-.contact-form{
-  text-align: center;
-  display: inline-block;
-  
-}
-
-.wrap-contact100 {
-  width: 920px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 62px 55px 90px 55px;
-}
-
-
-/*------------------------------------------------------------------
-[  ]*/
-
-.contact100-form {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact100-form-title {
-  display: block;
-  width: 100%;
-  font-family: 'Roboto';
-  font-size: 39px;
-  color: #333333;
-  line-height: 1.2;
-  text-align: center;
-  padding-bottom: 59px;
-}
-
-
-
-/*------------------------------------------------------------------
-[  ]*/
-
-.wrap-input100 {
-  width: 100%;
-  position: relative;
-  border: 1px solid #e6e6e6;
-  border-radius: 13px;
-  padding: 10px 30px 9px 22px;
-  margin-bottom: 20px;
-  
-}
-
-.rs1-wrap-input100 {
-  width: calc((100% - 30px) / 2);
-}
-
-.label-input100 {
-  font-family: 'Roboto';
-  font-size: 10px;
-  color: #393939;
-  line-height: 1.5;
-  text-transform: uppercase;
-  outline : none;
-  
-}
-
-.input100 {
-  display: block;
-  width: 100%;
-  background: transparent;
-  font-family: 'Roboto';
-  font-size: 18px;
-  color: #555555;
-  line-height: 1.2;
-  padding-right: 15px;
-  border: .5px solid grey;
-}
-
-
-/*---------------------------------------------*/
-input.input100 {
-  height: 40px;
-}
-
-
-textarea.input100 {
-  min-height: 120px;
-  padding-top: 9px;
-  padding-bottom: 13px;
-}
-
-
-.input100:focus + .focus-input100::before {
-  width: 100%;
-}
-
-.has-val.input100 + .focus-input100::before {
-  width: 100%;
-}
-
-
-/*------------------------------------------------------------------
-[ Button ]*/
-.container-contact100-form-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 20px;
-  width: 100%;
-}
-
-.contact100-form-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  width: 100%;
-  height: 50px;
-  background-color: #333333;
-  border-radius: 25px;
-
-  font-family: 'Roboto';
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.2;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.contact100-form-btn i {
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.contact100-form-btn:hover {
-  background-color: #00ad5f;
-}
-
-.contact100-form-btn:hover i {
-  -webkit-transform: translateX(10px);
-  -moz-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  -o-transform: translateX(10px);
-  transform: translateX(10px);
 }
