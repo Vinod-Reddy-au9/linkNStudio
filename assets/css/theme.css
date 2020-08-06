@@ -8578,6 +8578,7 @@ zoom-slider
 @-moz-document url-prefix() {
     .form-control{
       height: auto;
+      width: auto;
     }
 }
 .panel-primary{
@@ -8606,3 +8607,8 @@ html,body {
   margin-top: 1em;
 }
 
+@media only screen and (max-width: 768px) {
+  #connect{
+    width: 100%;
+  }
+}
