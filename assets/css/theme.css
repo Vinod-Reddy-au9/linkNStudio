@@ -8649,6 +8649,6 @@ html,body {
   padding-top: 1em;
 }
 
-input{
+/* input[type=text]{
   font-family: 'roboto';
-}
+} */
