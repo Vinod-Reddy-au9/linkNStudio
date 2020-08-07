@@ -58,7 +58,7 @@
     <div class="header__container">
       <div class="header__wrapper container-fluid">
         <div class="header__inner">
-          <img class="logoo" src="img/logo-white.png" alt="">
+          <img class="logoo" src="img/logo-white.png" alt="logo">
           <!-- <a class="logo header__logo" href="/">LINK N STUDIO</a> -->
           <button class="header__menu-button" type="button">
             <span class="header__menu-button-inner"></span>
@@ -1783,7 +1783,7 @@
               <div class="col-md-8 col-sm-12 col-xs-12 cccc">
                   <div class="panel panel-danger">
                       <div class="panel-body">
-                          <form class="contact_us_data" enctype="multipart/form-data">
+                          <form class="mail_handler.php" method="post" name="form">
                               <div class="form-group">
                                   <label class="f-left"><i class="fa fa-user" aria-hidden="true"></i> Name <span style="color: red"><sup>*</sup></span></label>
                                   <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
@@ -1794,29 +1794,28 @@
                               </div>
                               <div class="form-group">
                                   <label class="f-left"><i class="fa fa-phone" aria-hidden="true"></i> Phone <span style="color: red"><sup>*</sup></span></label>
-                                  <input type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10" = name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+                                  <input type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10"  name="phone" class="form-control" placeholder="Enter Mobile Number" required>
                               </div>
                               <div class="form-group">
                                   <label class="f-left"><i class="fa fa-comment" aria-hidden="true"></i> Message <span style="color: red"><sup>*</sup></span></label>
                                   <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea required>
                               </div>
-                              <div class="form-group">
+                              <!-- <div class="form-group">
                                   <label class="f-left"><i class="fa fa-gear" aria-hidden="true"></i> Services <span style="color: red"><sup>*</sup></span></label>
                                   <select name="services" id="" class="form-control">
                                       <option value="" class="form-control">Choose one</option>
                                       <option value="" class="form-control">ARTISTS</option>
                                       <option value=""class="form-control">BRANDS</option>
                                   </select>
-                              </div>
-                              <div class="form-group">
+                              </div> -->
+                              <!-- <div class="form-group">
                                   <label class="f-left"><i class="fa fa-upload" aria-hidden="true"></i> Upload Your Files <span style="color: red"><sup>*</sup></span></label>
                                   <input class="form-control" name="UploadImage" type="file" value="Upload Image" accept='image/*' required>
-                              </div>
+                              </div> -->
                               <div class="form-group">
-                                  <button class="btn btn-raised btn-block btn-primary" type="submit" >SUBMIT</button>
+                                  <button class="btn btn-raised btn-block btn-primary" type="submit" name="submit">SUBMIT</button>
                               </div>
                           </form>
-                          <p class="success" style="display: none">Submitted</p>
                       </div>
                   </div>
               </div>
@@ -1936,11 +1935,11 @@
 <script src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script>
 <!--Theme JS-->
 <script src="assets/js/theme.js"></script>
-<script src="assets/js/main.js"></script>
+<!-- <script src="assets/js/main.js"></script> -->
 </body>
 
 </html>
-<script>
+<!-- <script>
   jQuery(document).ready(function ($){
     $('form.contact_us_data').submit(function(e){
       e.preventDefault();
@@ -1962,4 +1961,4 @@
       });
     });
   });
-</script>
+</script> -->
