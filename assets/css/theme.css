@@ -8586,7 +8586,7 @@ zoom-slider
 }
 .panel-primary>.panel-heading {
     color: #fff;
-    font-size: 20px;
+    font-size: 10px;
     background-color: #2c3e50;
     border-color: #2c3e50;
 }
@@ -8597,6 +8597,8 @@ zoom-slider
 
 .f-left{
   float: left;
+  font-family: 'roboto';
+
 }
 html,body {
   overflow-x: hidden;
@@ -8631,7 +8633,22 @@ html,body {
   background-color: grey;
   }
 
-
 .artist{
   margin-top: 1em;
+}
+
+.abtpad{
+  padding: 1em;
+} 
+
+.just{
+  text-align: justify;
+}
+
+.abt{
+  padding-top: 1em;
+}
+
+input{
+  font-family: 'roboto';
 }
