@@ -8610,3 +8610,28 @@ html,body {
   margin-left: auto;
   margin-right: auto;
 }
+
+#video-gallery{
+  width: 90%;
+  height: 450px;
+  overflow: scroll;
+  margin: 0 auto;
+  
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* height: 100px; */
+  }
+  ::-webkit-scrollbar-track-piece  {
+  background-color: #C2D2E4;
+  }
+  ::-webkit-scrollbar-thumb:vertical {
+  height: 10px;
+  background-color: grey;
+  }
+
+
+.artist{
+  margin-top: 1em;
+}
