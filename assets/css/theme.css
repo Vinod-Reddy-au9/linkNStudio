@@ -8649,6 +8649,9 @@ html,body {
   padding-top: 1em;
 }
 
+.key{
+  text-align: center;
+}
 /* input[type=text]{
   font-family: 'roboto';
 } */
