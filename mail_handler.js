@@ -62,7 +62,7 @@ getdj = function () {
           Email.send({
             
             SecureToken: "67c13158-3bf5-417d-b04d-56807f1088bb",
-            To: 'rahulzcreations@gmail.com',
+            To: 'paul.sam916@gmail.com',
             From: document.getElementById("email").value,
             Subject: "Message from" + " " + document.getElementById("email").value,
             
@@ -126,7 +126,7 @@ getdj = function () {
       Email.send({
         
         SecureToken: "67c13158-3bf5-417d-b04d-56807f1088bb",
-        To: 'rahulzcreations@gmail.com',
+        To: 'paul.sam916@gmail.com',
         From: document.getElementById("email").value,
         Subject: "Message from" + " " + document.getElementById("email").value,
         // Body : 
