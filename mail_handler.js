@@ -80,7 +80,7 @@ getdj = function () {
             Attachments: [
               {
                 name: document.getElementById("postfile").files[0]['name'],
-                path: "https://firebasestorage.googleapis.com/v0/b/myprofile-a65df.appspot.com/o/1596964061023?alt=media&token=f9013934-f6fd-4d76-bc70-f01f60999f00"
+                path: downloadURL
               }]
   
           }).then(
