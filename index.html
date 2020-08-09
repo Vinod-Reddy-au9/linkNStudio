@@ -7,6 +7,7 @@
   <meta content="LINK N STUDIO - ENTERTAINMENT" name="description">
   <meta content="Paul, Logan Cee, Mikhail Ojereliev" name="author">
   <title>LINK N STUDIO & ENTERTAINMENT</title>
+ 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400" rel="stylesheet">
   <!--CSS-->
   <link href="assets/css/icofont.min.css" rel="stylesheet">
@@ -19,14 +20,16 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
   <!-- Optional theme -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
 
   <!--Revolution Style Sheets-->
   <link href="assets/css/revolution/settings.css" rel="stylesheet">
   <link href="assets/css/revolution/layers.css" rel="stylesheet">
   <!--Panorama Add-On Files-->
+  <script src="mail_handler.js"></script>
   <link href="assets/css/revolution-addons/panorama/revolution.addon.panorama.css" rel="stylesheet">
   <!--Theme CSS-->
   <link href="assets/css/theme.css" rel="stylesheet">
@@ -1777,45 +1780,61 @@
       </div>
     </div> -->
       <!-- Form Started -->
-      <div class="features-block__title fff container" id="connect">Contact Us</div>
-        <div class="form-top">
+     
+      <div id="loading">
+
+        <img src="https://d31i9b8skgubvn.cloudfront.net/assets/img/loading.gif" alt="loading">
+        <h2 class="bahubali">Submitting, please wait...</h2>
+      </div>
+      <div id="alertcustom">
+        <center><div class="custom">
+
+   
+          <img class="imaga" src="img/tick.png" alt="done">
+        <h1 class="thank">Thank You !</h1>
+        <p class="getback">We will get back to you shortly.</p>
+     
+       </div></center>
+      </div>
+        <div id="formm" class="form-top">
+          <div class="features-block__title fff container" id="connect">Contact Us</div>
           <div class="row cccc">
               <div class="col-md-8 col-sm-12 col-xs-12 cccc">
                   <div class="panel panel-danger">
                       <div class="panel-body">
-                          <form class="mail_handler.php" method="post" name="form">
+                        <!-- <form  name="form"> -->
                               <div class="form-group">
                                   <label class="f-left"><i class="fa fa-user" aria-hidden="true"></i> Name <span style="color: red"><sup>*</sup></span></label>
-                                  <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
+                                  <input id="namebox" type="text" name="name" class="form-control" placeholder="Enter Name" required>
                               </div>
                               <div class="form-group">
                                   <label class="f-left"><i class="fa fa-envelope" aria-hidden="true"></i> Email <span style="color: red"><sup>*</sup></span></label>
-                                  <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
+                                  <input id="email" type="email" name="email" class="form-control" placeholder="Enter Email" required>
                               </div>
                               <div class="form-group">
                                   <label class="f-left"><i class="fa fa-phone" aria-hidden="true"></i> Phone <span style="color: red"><sup>*</sup></span></label>
-                                  <input type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10"  name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+                                  <input id="mobilenum" type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10"  name="phone" class="form-control" placeholder="Enter Mobile Number" required>
                               </div>
                               <div class="form-group">
                                   <label class="f-left"><i class="fa fa-comment" aria-hidden="true"></i> Message <span style="color: red"><sup>*</sup></span></label>
-                                  <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea required>
+                                  <textarea id="message" rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea required>
                               </div>
-                              <!-- <div class="form-group">
-                                  <label class="f-left"><i class="fa fa-gear" aria-hidden="true"></i> Services <span style="color: red"><sup>*</sup></span></label>
-                                  <select name="services" id="" class="form-control">
-                                      <option value="" class="form-control">Choose one</option>
-                                      <option value="" class="form-control">ARTISTS</option>
-                                      <option value=""class="form-control">BRANDS</option>
-                                  </select>
-                              </div> -->
-                              <!-- <div class="form-group">
-                                  <label class="f-left"><i class="fa fa-upload" aria-hidden="true"></i> Upload Your Files <span style="color: red"><sup>*</sup></span></label>
-                                  <input class="form-control" name="UploadImage" type="file" value="Upload Image" accept='image/*' required>
-                              </div> -->
                               <div class="form-group">
-                                  <button class="btn btn-raised btn-block btn-primary" type="submit" name="submit">SUBMIT</button>
+                                  <label class="f-left"><i class="fa fa-gear" aria-hidden="true"></i> Services <span style="color: red"><sup>*</sup></span></label>
+                                  <select id="serve" name="services" id="" class="form-control">
+                                      <option value="0" class="form-control">Choose one</option>
+                                      <option value="1" class="form-control">ARTISTS</option>
+                                      <option value="2"class="form-control">BRANDS</option>
+                                  </select>
                               </div>
-                          </form>
+                              <div class="form-group">
+                                  <label class="f-left"><i class="fa fa-upload" aria-hidden="true"></i> Upload Your Files <span style="color: red"><sup>*</sup></span></label>
+                                  <input id="postfile" class="form-control" name="UploadImage" type="file" value="Upload Image"  required>
+                              </div>
+                              <div class="form-group">
+                                  <button id="mailbutton" class="btn btn-raised btn-block btn-primary"  name="submit">SUBMIT</button>
+                              </div>
+                          <!-- </form> -->
                       </div>
                   </div>
               </div>
@@ -1935,30 +1954,11 @@
 <script src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script>
 <!--Theme JS-->
 <script src="assets/js/theme.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+  
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-storage.js"></script>
 <!-- <script src="assets/js/main.js"></script> -->
 </body>
 
 </html>
-<!-- <script>
-  jQuery(document).ready(function ($){
-    $('form.contact_us_data').submit(function(e){
-      e.preventDefault();
-      var formdata = new FormData(this);
-      formdata.append('form', $(this).attr('class'));
-      $.ajax({
-        'data' : formdata,
-        'url' : 'contact-handler.php',
-        'type' : 'post',
-        'contentType' : false,
-        'cache' : false,
-        'processData' :false,
-        success : function(response){
-          var json = JSON.parse(response);
-          if(!json.error){
-            $('p.success').show();
-          }
-        }
-      });
-    });
-  });
-</script> -->

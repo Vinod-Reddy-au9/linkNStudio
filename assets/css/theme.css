@@ -8598,7 +8598,7 @@ zoom-slider
 .f-left{
   float: left;
   font-family: 'roboto';
-
+  font-weight: normal;
 }
 html,body {
   overflow-x: hidden;
@@ -8655,3 +8655,48 @@ html,body {
 /* input[type=text]{
   font-family: 'roboto';
 } */
+
+#loading{
+	user-select: none;
+	display: none;
+}
+#alertcustom{
+display: none;
+}
+.custom{
+  margin-top: 2em;
+	border-radius: 5px;
+background-color:white;
+height: 300px;
+width: 35%;
+box-shadow: inset 0 0 20px lightgreen;
+}
+.imaga{
+	margin-top: 38px;
+	width: 100px
+}
+.getback{
+  font-size: 1.5em;
+	color: black;
+	letter-spacing: 1px;
+	font-family: 'roboto';
+
+}
+.thank{
+	color: black;
+	letter-spacing: 1px;
+	font-family: 'roboto';
+
+
+}
+
+@media only screen and (max-width: 800px) {
+  .custom{
+    margin-top: 2em;
+    border-radius: 5px;
+  background-color:white;
+  height: 300px;
+  width: 90%;
+  box-shadow: inset 0 0 20px lightgreen;
+  }
+}
