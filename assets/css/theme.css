@@ -8698,15 +8698,15 @@ box-shadow: inset 0 0 20px lightgreen;
   text-decoration:none;
   font-family:'Roboto',sans-serif;
   font-weight: 30px;
-  color: #fff;
+  color: black;
   text-align:center;
   transition: all 0.15s;
-  background-color: steelblue;
+  background-color: aquamarine;
   letter-spacing: 1px;
 }
 .resetform:hover{
   color: black;
-  background-color:aquamarine;
+  background-color:rgb(28, 248, 175);
 
 }
 
