@@ -8689,6 +8689,31 @@ box-shadow: inset 0 0 20px lightgreen;
 
 
 }
+.resetform{
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #FFFFFF;
+  margin:0 0.4em 2em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight: 30px;
+  color: #fff;
+  text-align:center;
+  transition: all 0.15s;
+  background-color: steelblue;
+  letter-spacing: 1px;
+}
+.resetform:hover{
+  color: black;
+  background-color:aquamarine;
+
+}
+
+.resetform:active{
+color:#BBBBBB;
+border-color:#BBBBBB
+}
 
 @media only screen and (max-width: 800px) {
   .custom{
@@ -8699,4 +8724,7 @@ box-shadow: inset 0 0 20px lightgreen;
   width: 90%;
   box-shadow: inset 0 0 20px lightgreen;
   }
+}
+.bahubali{
+
 }
